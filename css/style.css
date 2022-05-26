@@ -1,0 +1,131 @@
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+html {
+      font-size: 42.5%;
+}
+
+body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: hsl(218, 23%, 16%);
+      padding: 10rem;
+}
+
+.container {
+      background-color: hsl(217, 19%, 24%);
+      width: 300px;
+      height: fit-content;
+      border-radius: 8px;
+      padding: 2rem;
+      /* overflow: hidden; */
+      position: relative;
+      margin-bottom: 20px;
+}
+
+.active {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+}
+
+.con {
+
+      display: flex;
+      justify-content: center;
+}
+
+.underline {
+      font-size: 3rem;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      letter-spacing: 2px;
+      margin-top: 10px;
+}
+
+.underline::before {
+      content: '';
+      position: absolute;
+      top: -4px;
+      right: 16px;
+      margin-right: 10px;
+      border-bottom: 1px solid hsl(217, 19%, 38%);
+      /* background-color: red; */
+      width: 100px;
+      height: 10px;
+}
+
+.underline::after {
+      content: '';
+      position: absolute;
+      top: -4px;
+      left: 16px;
+      margin-left: 10px;
+      border-bottom: 1px solid hsl(217, 19%, 38%);
+      /* background-color: red; */
+      width: 100px;
+      height: 10px;
+}
+
+.advice {
+      font-size: 3rem;
+      color: #fff;
+      text-align: center;
+}
+
+.butt {
+      background-color: hsl(150, 100%, 66%);
+      padding: 8px;
+      border-radius: 50%;
+      width: fit-content;
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+}
+
+.butt img{
+      object-fit: cover;
+      width: 15px;
+}
+
+#dom{
+      font-size: 3rem;
+      text-align: center;
+      background-color: hsl(217, 19%, 38%);
+      width: fit-content;
+}
+
+.head strong,.body p{
+      padding-inline: 10px;
+      text-align: center;
+}
+.head,.body{
+      display: flex;
+}
+.head{
+      justify-content: space-between;
+}
+
+.body p:first-child{
+      color: red;
+      width: 60px;
+      text-align: end;
+      /* background-color: aqua; */
+}
+.head .advice{
+      flex: 1;
+}
+
+- Light Cyan: hsl(193, 38%, 86%) - Neon Green: hsl(150, 100%, 66%) ### Neutral - Grayish Blue: hsl(217, 19%, 38%) - Dark Grayish Blue: hsl(217, 19%, 24%) - Dark Blue: hsl(218, 23%, 16%)
